@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - gBox
+  - sBox
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Environment
+    uniqueID: 3124735475
+    locked: 0
+  - name: BackGround
+    uniqueID: 1420232403
+    locked: 0
+  - name: Decoration
+    uniqueID: 3007636801
+    locked: 0
+  - name: Flatfroms
+    uniqueID: 382025497
+    locked: 0
+  - name: Player
+    uniqueID: 148929027
+    locked: 0
+  - name: box
+    uniqueID: 2196545165
+    locked: 0
