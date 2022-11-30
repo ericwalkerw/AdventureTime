@@ -42,7 +42,7 @@ public class PlayerAfterImageSprites : MonoBehaviour
 
         if (Time.time >= (timeActivated + activeTime))
         {
-
+            PlayerAfterImagePool.Instance.AddToPool(gameObject); 
         }
     }
 }
