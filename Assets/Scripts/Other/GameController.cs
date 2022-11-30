@@ -1,14 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class UI_Maneger : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    public static UI_Maneger UI;
+    public static GameController instance;
 
     public TMP_Text txt_Score;
 
     private int score = 0;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+    }
     public void AddScore(int x)
     {
         score += x;

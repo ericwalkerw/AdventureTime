@@ -10,7 +10,7 @@ public class BoxReward : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            GameController.UI.AddScore(boxValue);
+            GameController.instance.AddScore(boxValue);
 
             Destroy(gameObject);
         }
