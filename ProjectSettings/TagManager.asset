@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - gBox
   - sBox
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - ground
   - wall
-  - 
+  - Player
   - 
   - 
   - 
@@ -56,9 +57,15 @@ TagManager:
   - name: Flatfroms
     uniqueID: 382025497
     locked: 0
-  - name: Player
-    uniqueID: 148929027
-    locked: 0
   - name: box
     uniqueID: 2196545165
+    locked: 0
+  - name: Trap
+    uniqueID: 2644195839
+    locked: 0
+  - name: enemy
+    uniqueID: 1182384411
+    locked: 0
+  - name: Player
+    uniqueID: 148929027
     locked: 0

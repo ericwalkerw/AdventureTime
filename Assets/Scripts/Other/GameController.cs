@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
     public static GameController instance;
 
     public TMP_Text txt_Score;
+    public TMP_Text txt_ScoreAtResume;
 
     private int score = 0;
 
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
     {
         score += x;
         txt_Score.text = "Score: " + score;
+        txt_ScoreAtResume.text = "Your Score: " + score;
     }
 
 }
