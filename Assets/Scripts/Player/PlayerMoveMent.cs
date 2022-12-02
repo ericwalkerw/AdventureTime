@@ -76,7 +76,7 @@ public class PlayerMoveMent : MonoBehaviour
                 player.velocity = new Vector2(player.velocity.x, -wallSlideSpeed);
             }
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.K))
             {
                 isWallSliding = false;
                 player.velocity = new Vector2(player.velocity.x, jumpPower);
@@ -142,7 +142,7 @@ public class PlayerMoveMent : MonoBehaviour
     }
     private void Jump()
     {
-        if (Input.GetKey(KeyCode.Space) && isGrounded) 
+        if (Input.GetKey(KeyCode.K) && isGrounded) 
         {
             player.velocity = new Vector2(player.velocity.x, jumpPower);
             anim.SetTrigger("jump");
@@ -168,6 +168,6 @@ public class PlayerMoveMent : MonoBehaviour
     }   
     public bool canAttack()
     {
-        return horizontal == 0;
+        return horizontal != 0 || !isGrounded || horizontal == 0;
     }
 }
