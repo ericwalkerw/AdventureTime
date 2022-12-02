@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth {get; private set;}
     private Animator anim;
-    private bool dead;
+    public bool dead;
 
     private void Awake()
     {
@@ -29,8 +29,7 @@ public class Health : MonoBehaviour
                 anim.SetTrigger("die");
                 GetComponent<PlayerMoveMent>().enabled = false;
                 dead = true;
-            }
-            
+            }          
         }
     }
 }
