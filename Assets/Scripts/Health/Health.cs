@@ -4,6 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
+    [SerializeField] private GameObject MenuDeath;
     public float currentHealth {get; private set;}
     private Animator anim;
     public bool dead;
@@ -28,6 +29,7 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 GetComponent<PlayerMoveMent>().enabled = false;
+                MenuDeath.SetActive(true);
                 dead = true;
             }          
         }

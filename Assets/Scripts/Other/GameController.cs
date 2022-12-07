@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 public class GameController : MonoBehaviour
 {
+
     public static GameController instance;
 
     public TMP_Text txt_Score;
@@ -27,5 +28,7 @@ public class GameController : MonoBehaviour
         txt_Score.text = "Score: " + score;
         txt_ScoreAtResume.text = "Your Score: " + score;
     }
+
+    
 
 }
